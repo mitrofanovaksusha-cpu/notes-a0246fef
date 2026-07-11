@@ -69,6 +69,15 @@
     font-size: 13px;
   }
   .stat-row + .stat-row { border-top: 1px solid #f0f0f2; }
+  .stat-row.clickable {
+    cursor: pointer;
+    margin: 0 -10px;
+    padding: 10px;
+    border-radius: 6px;
+    transition: background 0.1s;
+  }
+  .stat-row.clickable:hover { background: #f5f5f7; }
+  .stat-row.clickable.active { background: #eef4ff; }
   .stat-label { display: flex; align-items: center; gap: 8px; color: #48484a; }
   .stat-value { font-weight: 700; }
   .stat-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
@@ -77,6 +86,7 @@
   .stat-dot.low { background: #c0392b; }
   .vacancy-list { flex: 1; min-width: 0; }
   .empty { color: #86868b; padding: 40px 0; text-align: center; }
+  .day-gap { margin-top: 18px; }
   .card {
     background: #fff;
     border: 1px solid #e0e0e3;
